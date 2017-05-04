@@ -4,7 +4,86 @@
     box-sizing: border-box;
 }
 
+//color variables
+$color1: #F1C40F;
+$color2: #3f3f3f;
+$color3: #575757;
+$color4: #f6f6f6;
+$color5: #A8DBA8;
+
+//font-family for titles
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700');
+
+$fontTitle: 'Open Sans', sans-serif;
+
+//font-weight for titles
+$mediumTitle: 600;
+$boldTitle: 800;
+
+//font-family for texts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+//font-weight for texts
+$light: 300;
+$normal: 400;
+$medium: 500;
+
 //General styles
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 img {
     max-width: 100%;
 }
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+//partials for index
+@import "partials/header";
+@import "partials/main-nav";
+@import "partials/landing";
+@import "partials/about";
+@import "partials/header-title";
+@import "partials/services";
+@import "partials/work";
+@import "partials/contact";
+@import "partials/footer";
+
+//partials for about
+@import "partials/team";
+@import "partials/intro";
+@import "partials/members";
+@import "partials/additional";
+
+//partials for online store
+@import "partials/store";
+@import "partials/package";
+@import "partials/details";
+
+//partials for restaurants
+@import "partials/restaurant";
+
+//partials for doctors
+@import "partials/doctor";
+
+//partials for portfolio
+@import "partials/header-portfolio";
+@import "partials/portfolio";
+
+
+

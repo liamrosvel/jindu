@@ -23,27 +23,33 @@ html(lang="es")
                             path.header__logo-symbol(d="M5.5 5.1l6.1-3.7c0 0 0.7-0.4 1.3 0 0.7 0.4 11.6 6.8 11.6 6.8v14c0 0 0 0.7-0.2 0.9L17.7 27V12.4L5.5 5.1z")
                             path.header__logo-symbol(d="M0.2 22.9l5.5-3.3c0 0 0.4 0 0.4 0.7 0 0.7 0 5.7 0 5.7s0 0.4-0.4 0.2C5.3 25.9 0.2 22.9 0.2 22.9")
                             path.header__logo-symbol(d="M0 12.3l5.5-3.3c0 0 0.7-0.4 1.3 0s7.9 4.6 7.9 4.6 0.2 0 0.2 0.9c0 0.9 0 9.2 0 9.2s0 0.7-0.2 0.9C14.5 24.8 9 28.1 9 28.1V17.5L0 12.3z")
-                    svg.header__icon-menu(version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24")
+                    svg.header__icon-menu#toggle-menu(version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24")
                         path(d="M3 6h18v2.016h-18v-2.016zM3 12.984v-1.969h18v1.969h-18zM3 18v-2.016h18v2.016h-18z")
-                nav.main-nav
+                nav.main-nav#main-nav
                     ul.main-nav__list
                         li.main-nav__item: a.main-nav__link(href="/") Home
                         li.main-nav__item: a.main-nav__link(href="about.html") ¿Quiénes somos?
                         li.main-nav__item
-                            a.main-nav__link(href="#") Servicios
-                            ul.main-nav__list.main-nav__list--child
-                                li.main-nav__item.main-nav__item--child: a.main-nav__link(href="online-store.html") ¿Vendes productos?
-                                li.main-nav__item.main-nav__item--child: a.main-nav__link(href="restaurants.html") ¿Tienes un restaurante?
-                                li.main-nav__item.main-nav__item--child: a.main-nav__link(href="doctors.html") ¿Eres médico?
+                            a.main-nav__link#toggle-submenu(href="#") Servicios
+                                svg.main-nav__icon-arrow(version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24")
+                                    path(d="M6.984 9.984h10.031l-5.016 5.016z")
+                            ul.main-nav__list.main-nav__list--child#sub-menu
+                                li.main-nav__item.main-nav__item--child 
+                                    a.main-nav__link.main-nav__link--child(href="online-store.html") ¿Vendes productos?
+                                li.main-nav__item.main-nav__item--child
+                                    a.main-nav__link.main-nav__link--child(href="restaurants.html") ¿Tienes un restaurante?
+                                li.main-nav__item.main-nav__item--child 
+                                    a.main-nav__link.main-nav__link--child(href="doctors.html") ¿Eres médico?
                         li.main-nav__item: a.main-nav__link(href="portfolio.html") Portafolio
                         li.main-nav__item: a.main-nav__link(href="mailto:jindu.team@gmail.com" alt="jindu.team-mail") Contáctanos
         main.main
             section.landing
                 div.landing__container
                     div.landing__copy-container
-                        h1.landing__copy-title Haz crecer tu negocio
+                        h1.landing__copy-title Haz crecer
+                        h1.landing__copy-title tu negocio
                         p.landing__copy-subtitle Creamos negocios digitales que trabajen por ti
-                        a.landing__copy-button(href="#") ¡Comienza hoy!
+                        a.landing__copy-button(href="mailto:jindu.team@gmail.com") ¡Comienza hoy!
                     figure.landing__img-container
                         img.landing__img(src="./images/landing-small.jpg" alt="Haz-crecer-tu-negocio")
             section.about
@@ -52,8 +58,9 @@ html(lang="es")
                         h2.header-title__title ¿Quiénes somos?
                         p.header-title__text
                             |Somos un estudio de diseño web Mexicano <strong>enfocado en crear negocios digitales</strong> que permitan a nuestros clientes poder ofrecer sus servicios y productos por internet.
-                    div.about__img-container
-                        h3.about__img-title ¡Conoce al equipo!
+                    a.about__img-link(href="about.html")
+                        div.about__img-container
+                            h3.about__img-title ¡Conoce al equipo!
             section.services
                 div.services__container
                     header.header-title

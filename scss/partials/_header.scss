@@ -1,0 +1,40 @@
+.header {
+    padding: 0.7rem 0;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 600;
+    box-shadow: 0 0.5px 1px rgba(#ccc, .5);
+
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    &__icons-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 8rem;
+    }
+    &__logo-type {
+        fill: $color2;
+    }
+    &__logo-symbol {
+        fill: $color1;
+    }
+    &__icon-menu {
+        width: 3rem;
+        fill: $color2;
+        cursor: pointer;
+        position: relative;
+        z-index: 750;
+
+        &.active-menu {
+            fill: #fff;
+        }
+    }
+}
