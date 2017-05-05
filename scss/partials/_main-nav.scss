@@ -43,10 +43,8 @@
     }
     //sub-menu
     &__list--child {
-        background-color: #fff;
+        background-color: darken($color1, 3%);
         width: 15.5rem;
-        border-radius: 5px;
-        box-shadow: 0.5px 0.5px 1px rgba(#ccc, .8);
 
         @media screen and (max-width: 63em) {
             max-height: 0;
@@ -65,11 +63,11 @@
     }
     &__link--child {
         display: block;
-        color: rgba($color3, .7);
+        color: darken($color1, 20%);
         font-size: 1.2rem;
         font-weight: $normal;
         line-height: 3.5;
-        box-shadow: 0 0.5px 0 rgba(#ccc, .5);
+        box-shadow: 0 0.5px 0 darken($color1, 10%);
         padding-left: 1rem;
     }
 }
