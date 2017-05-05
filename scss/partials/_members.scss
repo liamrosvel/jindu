@@ -1,0 +1,48 @@
+.members {
+    padding: 3rem 0;
+
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    &__items-container {
+        margin-top: 4rem;
+    }
+    &__item {
+        background-color: $color4;
+        border-radius: 10px;
+        padding: 2rem 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        box-shadow: 0.4px 0.3px 0 1.5px rgba(#ccc, .3);
+    }
+    &__item-img-container {
+
+    }
+    &__item-img {
+
+    }
+    &__item-title,
+    &__item-text,
+    &__item-subtitle {
+        color: $color3;
+    }
+    &__item-title {
+        text-transform: uppercase;
+        font-weight: $medium;
+        font-size: 1.4rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 0;
+    }
+    &__item-subtitle {
+        font-weight: $normal;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+    &__item-text {
+        margin-bottom: 0;
+        line-height: 1.6;
+        font-weight: $light;
+        font-size: 1.2rem;
+    }
+}

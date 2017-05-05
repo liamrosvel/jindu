@@ -1,0 +1,23 @@
+.intro {
+    background-color: $color4;
+    margin-top: 35rem;
+    padding: 3rem 0 0.1rem;
+
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__copy {
+        line-height: 1.8;
+        font-size: 1.3rem;
+        font-weight: $light;
+        margin-bottom: 3rem;
+    }
+    &__copy-style {
+        text-transform: uppercase;
+        font-weight: $medium;
+        color: $color1;
+        font-size: 1.7rem;
+    }
+}

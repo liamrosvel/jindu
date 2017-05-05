@@ -395,3 +395,108 @@ figure {
   .footer__copyright-style {
     color: #f6f6f6;
     text-decoration: none; }
+
+.team {
+  margin-top: 4.6rem;
+  padding: 3rem 0; }
+  .team__container {
+    width: 90%;
+    margin: 0 auto; }
+  .team__content {
+    position: relative;
+    margin-top: 4rem; }
+  .team__img {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .team__copy-container {
+    background-color: #F1C40F;
+    padding: 1.5rem 1rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    width: 90%;
+    opacity: 0.95; }
+  .team__copy-list {
+    font-size: 1.4rem;
+    line-height: 1.7; }
+  .team__copy-item {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 0; }
+  .team__copy-icon {
+    width: 1.5rem;
+    fill: #fff;
+    position: absolute;
+    top: 0.3rem;
+    left: 0; }
+
+.intro {
+  background-color: #f6f6f6;
+  margin-top: 35rem;
+  padding: 3rem 0 0.1rem; }
+  .intro__container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center; }
+  .intro__copy {
+    line-height: 1.8;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 3rem; }
+  .intro__copy-style {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #F1C40F;
+    font-size: 1.7rem; }
+
+.members {
+  padding: 3rem 0; }
+  .members__container {
+    width: 90%;
+    margin: 0 auto; }
+  .members__items-container {
+    margin-top: 4rem; }
+  .members__item {
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0.4px 0.3px 0 1.5px rgba(204, 204, 204, 0.3); }
+  .members__item-title, .members__item-text, .members__item-subtitle {
+    color: #575757; }
+  .members__item-title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 0; }
+  .members__item-subtitle {
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-top: 1rem; }
+  .members__item-text {
+    margin-bottom: 0;
+    line-height: 1.6;
+    font-weight: 300;
+    font-size: 1.2rem; }
+
+.additional {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(204, 204, 204, 0.3);
+  border-bottom: 1px solid rgba(204, 204, 204, 0.3); }
+  .additional__container {
+    width: 90%;
+    margin: 0 auto; }
+  .additional__copy {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: #3f3f3f;
+    font-weight: 300;
+    text-align: center; }
+  .additional__copy--style {
+    margin-bottom: 3rem; }
