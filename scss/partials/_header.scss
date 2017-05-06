@@ -11,6 +11,12 @@
     &__container {
         width: 90%;
         margin: 0 auto;
+
+        @media screen and (min-width: 64em) {
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+        }
     }
     &__icons-container {
         display: flex;
@@ -35,6 +41,10 @@
 
         &.active-menu {
             fill: #fff;
+        }
+
+        @media screen and (min-width: 64em) {
+            display: none;
         }
     }
 }

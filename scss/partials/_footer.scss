@@ -8,6 +8,10 @@
     }
     &__info-container {
         margin-bottom: 3rem;
+
+        @media screen and (min-width: 40em) {
+            text-align: center;
+        }
     }
     &__info-title,
     &__info-link,
@@ -42,9 +46,17 @@
         margin-right: 0.5rem;
         position: relative;
         top: 0.2rem;
+        transition: all 250ms ease-in;
     }
     &__info-link {
         text-decoration: none;
+        transition: all 250ms ease-in;
+        &:hover {
+            color: #fff;
+        }
+        &:hover .footer__info-icon {
+            fill: #fff;
+        }
     }
     //copyright section
     &__copyright-container {
@@ -60,5 +72,9 @@
     &__copyright-style {
         color: $color4;
         text-decoration: none;
+        transition: all 250ms ease-in;
+        &:hover {
+            color: darken($color4, 20%);
+        }
     }
 }

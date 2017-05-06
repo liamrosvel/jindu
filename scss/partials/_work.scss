@@ -8,6 +8,12 @@
     }
     &__items-container {
         margin-top: 3rem;
+
+        @media screen and (min-width: 48em) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
     }
     &__item {
         text-align: center;
@@ -16,6 +22,15 @@
         background-color: $color4;
         border-radius: 10px;
         box-shadow: 0.2px 0.4px 1px 1px rgba(#ccc, .6);
+    
+        @media screen and (min-width: 40em) {
+            width: 70%;
+            margin: 0 auto 2rem;
+        }
+
+        @media screen and (min-width: 48em) {
+            flex-basis: 45%;
+        }
     }
     &__item-img {
         width: 6rem;

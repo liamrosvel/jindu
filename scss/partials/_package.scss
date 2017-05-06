@@ -1,0 +1,96 @@
+.package {
+    padding: 3rem 0;
+
+    &__items-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    &__item {
+        text-align: center;
+        border: 1px solid rgba(#ccc, .8);
+        border-radius: 10px;
+        margin-bottom: 3rem;
+        padding: 1.5rem 0;
+        transition: all 250ms ease-in;
+
+        @media screen and (min-width: 64em) {
+            &:hover {
+                cursor: pointer;
+                border-color: $color5;
+            }
+        }
+    }
+    //price section
+    &__item-price-container {
+        padding: 2rem 0;
+        border-bottom: 1px solid rgba(#ccc, .8);
+    }
+    &__item-header {
+        
+    }
+    &__item-title {
+        margin-top: 0;
+        text-transform: uppercase;
+        color: rgba(#ccc, .5);
+        font-family: $fontTitle;
+        font-size: 2.7rem;
+    }
+    &__item-price-style {
+       position: relative; 
+    }
+    &__item-price-peso,
+    &__item-price,
+    &__item-price-coin {
+        color: $color5;
+    }
+    &__item-price-peso,
+    &__item-price-coin {
+        font-weight: $normal;
+        font-size: 1.7rem;
+    }
+    &__item-price {
+        font-weight: $medium;
+        font-size: 4rem;
+    }
+    &__item-price-coin {
+        text-transform: uppercase;
+    }
+    //Issues section
+    &__item-list-container {
+        padding: 3rem 1.5rem;
+    }
+    &__item-list-item {
+        color: $color3;
+        line-height: 3;
+        font-size: 1.2rem;
+        font-weight: $light;
+    }
+    //button section
+    &__button-container {
+        padding-bottom: 2rem;
+    }
+    &__button {
+        text-decoration: none;
+        display: inline-block;
+        line-height: 2.8;
+        padding: 0 2rem;
+        font-size: 1.5rem;
+        border-radius: 8px;
+
+        @media screen and (max-width: 63em) {
+            background-color: $color5;
+            color: #fff;
+        }
+
+        @media screen and (min-width: 64em) {
+            border: 1.5px solid $color3;
+            color: $color3;
+            transition: all 250ms ease-in;
+            &:hover {
+                border: none;
+                background-color: $color5;
+                color: #fff;
+            } 
+        }
+    }
+}
