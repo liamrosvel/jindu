@@ -27,7 +27,7 @@ html(lang="es")
                         path(d="M3 6h18v2.016h-18v-2.016zM3 12.984v-1.969h18v1.969h-18zM3 18v-2.016h18v2.016h-18z")
                 nav.main-nav#main-nav
                     ul.main-nav__list
-                        li.main-nav__item: a.main-nav__link(href="/") Home
+                        li.main-nav__item: a.main-nav__link.main-nav__link--hidden(href="/") Home
                         li.main-nav__item: a.main-nav__link(href="about.html") ¿Quiénes somos?
                         li.main-nav__item
                             a.main-nav__link#toggle-submenu(href="#") Servicios
@@ -41,7 +41,7 @@ html(lang="es")
                                 li.main-nav__item.main-nav__item--child 
                                     a.main-nav__link.main-nav__link--child(href="doctors.html") ¿Eres médico?
                         li.main-nav__item: a.main-nav__link(href="portfolio.html") Portafolio
-                        li.main-nav__item: a.main-nav__link(href="mailto:jindu.team@gmail.com" alt="jindu.team-mail") Contáctanos
+                        li.main-nav__item: a.main-nav__link.main-nav__link--button(href="mailto:jindu.team@gmail.com" alt="jindu.team-mail") Contáctanos
         main.main
             section.header-portfolio
                 div.header-portfolio__container

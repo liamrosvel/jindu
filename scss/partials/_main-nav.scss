@@ -1,7 +1,8 @@
 .main-nav {
 
-    @media screen and (max-width: 63em) {
+    @media screen and (max-width: 74.9em) {
         background-color: $color1;
+        opacity: 0;
         position: fixed;
         width: 80vw;
         height: 100vh;
@@ -15,31 +16,43 @@
     }
     &.active {
         right: 0;
+        opacity: .98;
     }
 
     //main-menu
     &__list {
         position: relative;
+
+        @media screen and (min-width: 64em) {
+            margin-left: 3rem;
+        }
+
+        @media screen and (min-width: 75em) {
+            display: table;
+        }
     }
     &__item {
 
-        @media screen and (max-width: 63em) {
-            margin-bottom: 1rem;
+        @media screen and (min-width: 75em) {
+            float: left;
         }
 
-        @media screen and (min-width: 64em) {
-            display: inline-block;
-            margin-left: 2.5rem;
-        }
     }
     &__link {
         text-decoration: none;
         color: #fff;
         font-size: 1.5rem;
         font-weight: $medium;
-        line-height: 2.5;
+        line-height: 3.2;
+        display: block;
 
         @media screen and (min-width: 64em) {
+            font-size: 1.8rem;
+        }
+
+        @media screen and (min-width: 75em) {
+            line-height: 2.5;
+            padding: 0 2rem;
             color: $color3;
             font-weight: $normal;
             font-size: 1.1rem;
@@ -51,16 +64,16 @@
     }
     &__link--hidden {
 
-        @media screen and (min-width: 64em) {
+        @media screen and (min-width: 75em) {
             display: none;
         }
     }
     &__link--button {
 
-        @media screen and (min-width: 64em) {
+        @media screen and (min-width: 75em) {
             background-color: $color5;
             color: #fff;
-            display: inline-block;
+            display: block;
             line-height: 2.5;
             padding: 0 1.5rem;
             border-radius: 3rem;
@@ -78,7 +91,7 @@
         right: 0.5rem;
         top: 0.5rem;
 
-        @media screen and (min-width: 64em) {
+        @media screen and (min-width: 75em) {
             fill: $color2;
             width: 1.5rem;
             top: 0.35rem;
@@ -87,52 +100,76 @@
     //sub-menu
     &__list--child {
         background-color: darken($color1, 3%);
-        width: 15.5rem;
+        width: 13.5rem;
 
-        @media screen and (max-width: 63em) {
+        @media screen and (min-width: 30em) {
+            width: 15rem;
+        }
+
+        @media screen and (min-width: 37.5em) {
+            width: 16rem;
+        }
+
+        @media screen and (min-width: 64em) {
+            margin-left: 0;
+            width: 17rem;
+        }
+
+        @media screen and (max-width: 74.9em) {
             max-height: 0;
             overflow: hidden;
             transition: all 250ms ease-in;
         }
 
-        @media screen and (min-width: 64em) {
-            background-color: #fff;
-            box-shadow: 0.4px 0.4px 1px 1px rgba(#ccc, .5);
-            position: absolute;
-            left: 12rem;
-            top: 3.8rem;
-            padding: 0;
+        &.show-submenu {
+            max-height: 12.5rem;
+
+            @media screen and (min-width: 64em) {
+                max-height: 14rem;
+            }
         }
 
-        &.show-submenu {
-            max-height: 13rem;
+        @media screen and (min-width: 75em) {
+            background-color: #fff;
+            position: absolute;
+            display: none;
         }
+
     }
     &__item--child {
         
-        @media screen and (max-width: 63em) {
-            margin-bottom: 0;
-        }
-
-        @media screen and (min-width: 64em) {
-            margin: 0;
-            display: block;
+        @media screen and (min-width: 75em) {
+            float: none;
         }
     }
     &__link--child {
-        display: block;
         color: darken($color1, 20%);
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: $normal;
         line-height: 3.5;
         box-shadow: 0 0.5px 0 darken($color1, 10%);
         padding-left: 1rem;
 
-        @media screen and (min-width: 64em) {
-            color: rgba($color3, .7);
-            font-size: 1.1rem;
-            box-shadow: 0 0.5px 0 rgba($color3, .2);
-            padding-left: 0;
+        @media screen and (min-width: 30em) {
+            font-size: 1.2rem;
         }
+
+        @media screen and (min-width: 64em) {
+            line-height: 3.9;
+        }
+
+        @media screen and (min-width: 75em) {
+            color: rgba($color3, .7);
+            font-size: 1rem;
+            box-shadow: 0 0.5px 0 rgba($color3, .2);
+            line-height: 4;
+        }
+    }
+}
+
+//show sub menu since 64em
+@media screen and (min-width: 75em) {
+    .main-nav__item:hover > .main-nav__list--child {
+        display: block;
     }
 }

@@ -1,6 +1,11 @@
 .header-title {
     text-align: center;
 
+    @media screen and (min-width: 64em) {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     &__title,
     &__text {
         color: $color3;
