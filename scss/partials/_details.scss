@@ -19,12 +19,29 @@
         margin-top: 3rem;
         background-color: $color4;
         padding: 2.5rem 1rem;
+
+        @media screen and (min-width: 64em) {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+    }
+    &__info {
+
+        @media screen and (min-width: 64em) {
+            flex-basis: 47%;
+        }
     }
     &__info-title {
         font-weight: $normal;
         font-size: 1.4rem;
         margin: 0 0 2rem;
         color: $color2;
+
+        @media screen and (min-width: 64em) {
+            font-size: 1.2rem;
+        }
     }
     &__info-list {
         color: $color3;
@@ -47,8 +64,16 @@
             left: 0;
             top: 0.7rem;
         }
+
+        @media screen and (min-width: 64em) {
+            font-size: 1.1rem;
+        }
     }
     &__info--style {
         margin-bottom: 4.5rem;
+
+        @media screen and (min-width: 64em) {
+            margin-bottom: 0;
+        }
     }
 }

@@ -8,6 +8,15 @@
 
         @media screen and (min-width: 48em) {
             width: 88%;
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 64em) {
+            justify-content: space-between;
+            align-items: center;
         }
 
         @media screen and (min-width: 75em) {
@@ -22,11 +31,22 @@
         padding: 1.5rem 0;
         transition: all 250ms ease-in;
 
+        @media screen and (min-width: 30em) {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (min-width: 48em) {
+            flex-basis: 45%;
+        }
+
         @media screen and (min-width: 64em) {
-            &:hover {
-                cursor: pointer;
-                border-color: $color5;
-            }
+            flex-basis: 31%;
+        }
+
+        @media screen and (min-width: 75em) {
+            flex-basis: 28%;
         }
     }
     //price section
@@ -43,6 +63,14 @@
         color: rgba(#ccc, .5);
         font-family: $fontTitle;
         font-size: 2.7rem;
+
+        @media screen and (min-width: 64em) {
+            font-size: 2.4rem;
+        }
+
+        @media screen and (min-width: 75em) {
+            font-size: 2.2rem;
+        }
     }
     &__item-price-style {
        position: relative; 
@@ -52,14 +80,34 @@
     &__item-price-coin {
         color: $color5;
     }
+    //color modifiers for restaurants
+    &__item-price-peso--yellow,
+    &__item-price--yellow,
+    &__item-price-coin--yellow {
+        color: rgba($color1, .5);
+    }
+    //color modifiers for doctors
+    &__item-price-peso--blue,
+    &__item-price--blue,
+    &__item-price-coin--blue {
+        color: rgba(#7AA7D6, .8);
+    }
     &__item-price-peso,
     &__item-price-coin {
         font-weight: $normal;
         font-size: 1.7rem;
+
+        @media screen and (min-width: 64em) {
+            font-size: 1.5rem;
+        }
     }
     &__item-price {
         font-weight: $medium;
         font-size: 4rem;
+
+        @media screen and (min-width: 64em) {
+            font-size: 3rem;
+        }
     }
     &__item-price-coin {
         text-transform: uppercase;
@@ -73,6 +121,10 @@
         line-height: 3;
         font-size: 1.2rem;
         font-weight: $light;
+
+        @media screen and (min-width: 64em) {
+            font-size: 1.1rem;
+        }
     }
     //button section
     &__button-container {
@@ -85,21 +137,30 @@
         padding: 0 2rem;
         font-size: 1.5rem;
         border-radius: 8px;
-
-        @media screen and (max-width: 63em) {
-            background-color: $color5;
+        background-color: $color5;
+        color: #fff;
+        transition: all 200ms ease-in;
+        &:hover {
+            background-color: $color1;
             color: #fff;
         }
 
         @media screen and (min-width: 64em) {
-            border: 1.5px solid $color3;
-            color: $color3;
-            transition: all 250ms ease-in;
-            &:hover {
-                border: none;
-                background-color: $color5;
-                color: #fff;
-            } 
+            font-size: 1.2rem;
+        }
+    }
+    //background-color modifiers for buttons restaurants
+    &__button--yellow {
+        background-color: $color1;
+        &:hover {
+            background-color: $color5;
+        }
+    }
+    //background-color modifiers for buttons doctors
+    &__button--blue {
+        background-color: rgba(#7AA7D6, .8);
+        &:hover {
+            background-color: $color5;
         }
     }
 }

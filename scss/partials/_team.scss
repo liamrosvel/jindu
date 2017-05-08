@@ -1,6 +1,14 @@
 .team {
     margin-top: 4.6rem;
-    padding: 3rem 0;
+    padding: 3rem 0 6rem;
+
+    @media screen and (min-width: 30em) {
+        padding-bottom: 3rem;
+    }
+
+    @media screen and (min-width: 48em) {
+        padding-bottom: 0;
+    }
 
     &__container {
         width: 90%;
@@ -20,11 +28,39 @@
         position: relative;
         margin-top: 4rem;
     }
-    &__img {
-        width: 90%;
+    &__img-container {
+        background: url(../images/team-section.jpg) 50% 50% / cover no-repeat;
+        width: 17rem;
+        height: 37rem;
         position: absolute;
         top: 0;
         right: 0;
+
+        @media screen and (min-width: 30em) {
+            width: 25rem;
+            height: 33rem;
+        }
+
+        @media screen and (min-width: 37.5em) {
+            width: 32rem;
+            height: 30rem;
+        }
+
+        @media screen and (min-width: 48em) {
+            background-image: url(../images/team-section-big.jpg);
+            width: 40rem;
+            height: 25rem;
+        }
+
+        @media screen and (min-width: 64em) {
+            height: 27.5rem;
+        }
+
+        @media screen and (min-width: 75em) {
+            width: 47rem;
+            height: 26rem;
+        }
+
     }
     &__copy-container {
         background-color: $color1;
@@ -34,6 +70,21 @@
         left: 0;
         width: 90%;
         opacity: 0.95;
+
+        @media screen and (min-width: 37.5em) {
+            top: 4rem;
+        }
+
+        @media screen and (min-width: 64em) {
+            width: 70%;
+            height: 20rem;
+        }
+
+        @media screen and (min-width: 75em) {
+            width: 55%;
+            height: 22rem;
+            top: 2.5rem;
+        }
     }
     &__copy-list {
         font-size: 1.4rem;
@@ -45,6 +96,12 @@
         position: relative;
         padding-left: 2rem;
         margin-top: 0;
+
+        @media screen and (min-width: 64em) {
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
     }
     &__copy-icon {
         width: 1.5rem;
