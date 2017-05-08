@@ -8,6 +8,10 @@
 
         @media screen and (min-width: 48em) {
             width: 88%;
+
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         @media screen and (min-width: 75em) {
@@ -22,6 +26,25 @@
         margin-bottom: 2rem;
         box-shadow: 0.4px 0.4px 1px 1px rgba(#ccc, .6);
         cursor: pointer;
+
+        @media screen and (min-width: 30em) {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (min-width: 48em) {
+            flex-basis: 45%;
+        }
+
+        @media screen and (min-width: 64em) {
+            flex-basis: 31%;
+        }
+
+        @media screen and (min-width: 64em) {
+            flex-basis: 29%;
+            margin-bottom: 3rem;
+        }
     }
     &__img-container-1,
     &__img-container-2,
@@ -58,11 +81,20 @@
         margin: 0 0 0.7rem;
         font-size: 1.3rem;
         font-weight: $medium;
+
+        @media screen and (min-width: 64em) {
+            font-size: 1.2rem;
+            font-weight: $normal;
+        }
     }
     &__copy-subtitle {
         color: rgba($color3, .7);
         font-size: 1.2rem;
         margin: 0;
+
+        @media screen and (min-width: 64em) {
+            font-size: 1rem;
+        }
     }
     &__button {
         text-decoration: none;
@@ -75,5 +107,13 @@
         border-radius: 3rem;
         margin-top: 1.5rem;
         box-shadow: 0.4px 0.4px 1px 1px rgba(#ccc, .6);
+        transition: all 250ms ease-in;
+
+        @media screen and (min-width: 64em) {
+            font-size: 1rem;
+            &:hover {
+                background-color: $color1;
+            }
+        }
     }
 }

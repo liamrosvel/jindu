@@ -1193,8 +1193,12 @@ figure {
 
 .header-portfolio {
   margin-top: 4.6rem;
-  padding: 3rem 0;
+  padding: 4rem 0;
   background-color: #f6f6f6; }
+  @media screen and (min-width: 64em) {
+    .header-portfolio {
+      background: linear-gradient(rgba(245, 245, 245, 0.93), rgba(245, 245, 245, 0.93)), url(../images/banner-portfolio.jpg) 50% 0/cover no-repeat;
+      filter: grayscale(1); } }
   .header-portfolio__container {
     width: 90%;
     margin-left: auto;
@@ -1214,7 +1218,13 @@ figure {
     margin-right: auto; }
     @media screen and (min-width: 48em) {
       .portfolio__container {
-        width: 88%; } }
+        width: 88%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
     @media screen and (min-width: 75em) {
       .portfolio__container {
         width: 1100px; } }
@@ -1225,6 +1235,24 @@ figure {
     margin-bottom: 2rem;
     box-shadow: 0.4px 0.4px 1px 1px rgba(204, 204, 204, 0.6);
     cursor: pointer; }
+    @media screen and (min-width: 30em) {
+      .portfolio__item {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media screen and (min-width: 48em) {
+      .portfolio__item {
+        -ms-flex-preferred-size: 45%;
+        flex-basis: 45%; } }
+    @media screen and (min-width: 64em) {
+      .portfolio__item {
+        -ms-flex-preferred-size: 31%;
+        flex-basis: 31%; } }
+    @media screen and (min-width: 64em) {
+      .portfolio__item {
+        -ms-flex-preferred-size: 29%;
+        flex-basis: 29%;
+        margin-bottom: 3rem; } }
   .portfolio__img-container-1, .portfolio__img-container-2, .portfolio__img-container-3, .portfolio__img-container-4, .portfolio__img-container-5, .portfolio__img-container-6 {
     height: 250px; }
   .portfolio__img-container-1 {
@@ -1247,10 +1275,17 @@ figure {
     margin: 0 0 0.7rem;
     font-size: 1.3rem;
     font-weight: 500; }
+    @media screen and (min-width: 64em) {
+      .portfolio__copy-title {
+        font-size: 1.2rem;
+        font-weight: 400; } }
   .portfolio__copy-subtitle {
     color: rgba(87, 87, 87, 0.7);
     font-size: 1.2rem;
     margin: 0; }
+    @media screen and (min-width: 64em) {
+      .portfolio__copy-subtitle {
+        font-size: 1rem; } }
   .portfolio__button {
     text-decoration: none;
     display: inline-block;
@@ -1261,4 +1296,10 @@ figure {
     background-color: #A8DBA8;
     border-radius: 3rem;
     margin-top: 1.5rem;
-    box-shadow: 0.4px 0.4px 1px 1px rgba(204, 204, 204, 0.6); }
+    box-shadow: 0.4px 0.4px 1px 1px rgba(204, 204, 204, 0.6);
+    transition: all 250ms ease-in; }
+    @media screen and (min-width: 64em) {
+      .portfolio__button {
+        font-size: 1rem; }
+        .portfolio__button:hover {
+          background-color: #F1C40F; } }
